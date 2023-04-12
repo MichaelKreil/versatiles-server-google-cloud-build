@@ -8,4 +8,4 @@ EXPOSE $PORT
 
 # Run the web service on container startup.
 CMD versatiles serve -i "0.0.0.0" -p $PORT -s ./frontend.br.tar \
-    "[osm]https://storage.googleapis.com/$_BUCKET_PATH/planet-20230227.versatiles"
+    "[osm]https://storage.googleapis.com/$_VERSATILES_BUCKET_PATH"
